@@ -1,16 +1,19 @@
 const express =require('express')
+require("dotenv").config()
+
 const app=express()
 
-app.get('/api',(req,res)=>{
+app.get('/',(req,res)=>{
     res.json({
         message:'Hello Backend third'
     })
 })
 
-app.get('/api/test',(req,res)=>{
+app.get('/test',(req,res)=>{
     res.json({
         message:'This is test message'
     })
 })
 
-app.listen(4000)
+app.listen(process.env.PORT)
+console.log(process.env.PORT)
