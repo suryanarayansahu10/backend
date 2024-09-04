@@ -1,13 +1,13 @@
 const express =require('express')
 const app=express()
 
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
     res.json({
-        message:'Hello Backend second'
+        message:'Hello Backend third'
     })
 })
 
-app.get('/test',(req,res)=>{
+app.get('/api/test',(req,res)=>{
     res.json({
         message:'This is test message'
     })
