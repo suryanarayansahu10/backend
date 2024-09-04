@@ -7,4 +7,10 @@ app.get('/',(req,res)=>{
     })
 })
 
+app.get('/test',(req,res)=>{
+    res.json({
+        message:'This is test message'
+    })
+})
+
 app.listen(4000)
